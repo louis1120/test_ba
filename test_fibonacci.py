@@ -1,3 +1,4 @@
+import typer 
 def fibonacci(n):
     if n <= 0:
         return []
@@ -11,4 +12,4 @@ def fibonacci(n):
     return sequence
 
 n = int(input("Enter the number of Fibonacci numbers: "))
-print(fibonacci(n))
+typer.echo(fibonacci(n))
